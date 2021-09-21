@@ -4,7 +4,7 @@ import NotFound from "../../components/Not Found";
 import DetailPage from "./pages/DetailPage";
 import ListPage from "./pages/ListPage";
 // TodoFeature.propTypes = {};
-//cmont
+//cmon
 function TodoFeature(props) {
   const match = useRouteMatch();
   return (
