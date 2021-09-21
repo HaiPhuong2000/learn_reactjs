@@ -7,3 +7,4 @@ function DetailPage(props) {
 }
 
 export default DetailPage;
+//cmont
