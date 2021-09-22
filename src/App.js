@@ -1,11 +1,20 @@
 // import "./App.css";
+import React, { useEffect } from "react";
 import AlbumFeature from "./features/Album";
 import { Redirect, Route, Switch } from "react-router";
 import TodoFeature from "./features/Todo";
 import { Link, NavLink } from "react-router-dom";
 import NotFound from "./components/Not Found";
+import productApi from "./api/productApi";
 //cmon
 function App() {
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const productList = await productApi.getAll();
+      console.log(productList);
+    };
+    fetchProducts();
+  }, []);
   return (
     <div className="App">
       {/* <p>

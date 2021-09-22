@@ -18,6 +18,7 @@ function TodoList({ todoList, onTodoClick }) {
 
     onTodoClick(todo, index);
   };
+
   return (
     <ul className="todo-list">
       {todoList.map((todo, index) => (
